@@ -1,0 +1,57 @@
+{
+  "run_name": "luxembourg_south_bonnevoie-default-kmeans-4",
+  "city_name": "luxembourg_south_bonnevoie",
+  "algorithm": "kmeans",
+  "n_clusters": 4,
+  "features_used": [
+    "mean_speed",
+    "pct_high_capacity",
+    "pct_mid_capacity",
+    "pct_local",
+    "road_type_entropy",
+    "traffic_lights_per_km",
+    "turns_per_km",
+    "yield_priority_changes_per_km",
+    "left_yield_turns_per_km",
+    "mean_circuity",
+    "edges_per_km",
+    "edge_dist_from_shortest",
+    "mean_edge_dist_to_other_routes",
+    "max_edge_dist_to_other_routes"
+  ],
+  "feature_pruning": [
+    {
+      "feature": "free_flow_time",
+      "reason": "correlation",
+      "kept": "total_length",
+      "correlation": 0.9773211634779014
+    },
+    {
+      "feature": "free_flow_time",
+      "reason": "correlation",
+      "kept": "mean_circuity",
+      "correlation": 0.9202604056377498
+    },
+    {
+      "feature": "total_length",
+      "reason": "correlation",
+      "kept": "mean_circuity",
+      "correlation": 0.9416594791717449
+    },
+    {
+      "feature": "speed_std",
+      "reason": "correlation",
+      "kept": "mean_speed",
+      "correlation": 0.8829670437124878
+    }
+  ],
+  "silhouette": 0.11759417313059894,
+  "average_actions_per_od": 3.8,
+  "cluster_sizes": {
+    "0": 1419,
+    "1": 1183,
+    "2": 1201,
+    "3": 1499
+  },
+  "inertia": 4894.154044985886
+}
