@@ -24,34 +24,34 @@
       "feature": "free_flow_time",
       "reason": "correlation",
       "kept": "total_length",
-      "correlation": 0.9773211634779014
+      "correlation": 0.9769996021079935
     },
     {
       "feature": "free_flow_time",
       "reason": "correlation",
       "kept": "mean_circuity",
-      "correlation": 0.9202604056377498
+      "correlation": 0.923180903956853
     },
     {
       "feature": "total_length",
       "reason": "correlation",
       "kept": "mean_circuity",
-      "correlation": 0.9416594791717449
+      "correlation": 0.9448833804238496
     },
     {
       "feature": "speed_std",
       "reason": "correlation",
       "kept": "mean_speed",
-      "correlation": 0.8829670437124878
+      "correlation": 0.8867994629266812
     }
   ],
-  "silhouette": 0.11759417313059894,
-  "average_actions_per_od": 3.8,
+  "silhouette": 0.11811874551307672,
+  "average_actions_per_od": 3.905701754385965,
   "cluster_sizes": {
-    "0": 1419,
-    "1": 1183,
-    "2": 1201,
-    "3": 1499
+    "0": 1156,
+    "1": 1400,
+    "2": 1207,
+    "3": 1490
   },
-  "inertia": 4894.154044985886
+  "inertia": 4836.037031246514
 }
