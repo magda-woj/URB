@@ -20,3 +20,7 @@ Supported overrides are `--alg-conf`, `--env-conf`, `--task-conf`, `--net`, `--e
 ```bash
 venv/bin/python tools/rename.py old_exp new_exp
 ```
+
+## Choose LuST crops
+
+`lux_crops/` profiles every 900 × 900 m window of the LuST network with graph properties (networkx) and SUMO network properties (traffic lights, motorways), chooses the street windows whose route-choice structure differs most from `luxembourg_south_bonnevoie` and from each other, and draws them like `networks/luxembourg_south_bonnevoie/luxembourg_south_bonnevoie.png`. See [lux_crops/README.md](lux_crops/README.md) and the method report [lux_crops/REPORT.md](lux_crops/REPORT.md).
