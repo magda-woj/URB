@@ -1,0 +1,170 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<routes xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://sumo.dlr.de/xsd/routes_file.xsd">
+    <vTypeDistribution id="private">
+        <vType vClass="passenger" id="passenger1" color=".8,.2,.2" accel="2.6" decel="4.5" sigma="0.5" length="5.0" minGap="1.5" maxSpeed="70" probability=".40" speedDev="0.1" guiShape="passenger/sedan" />
+        <vType vClass="passenger" id="passenger2a" color=".8,.8,.8" accel="3.0" decel="4.5" sigma="0.5" length="4.5" minGap="1.5" maxSpeed="50" probability=".20" speedDev="0.1" guiShape="passenger/hatchback" />
+        <vType vClass="passenger" id="passenger2b" color=".2,.2,.8" accel="2.8" decel="4.5" sigma="0.5" length="4.5" minGap="1.0" maxSpeed="50" probability=".20" speedDev="0.1" guiShape="passenger/hatchback" />
+        <vType vClass="passenger" id="passenger3" color=".3,.3,.3" accel="2.7" decel="4.5" sigma="0.5" length="6.0" minGap="1.5" maxSpeed="70" probability=".10" speedDev="0.1" guiShape="passenger/wagon" />
+        <vType vClass="passenger" id="passenger4" color=".9,.9,.9" accel="2.4" decel="4.5" sigma="0.5" length="5.5" minGap="1.5" maxSpeed="30" probability=".05" speedDev="0.1" guiShape="passenger/van" />
+        <vType vClass="passenger" id="passenger5" color=".8,.8,.0" accel="2.3" decel="4.5" sigma="0.5" length="7.0" minGap="2.5" maxSpeed="30" probability=".05" speedDev="0.1" guiShape="delivery" />
+    </vTypeDistribution>
+    <vType vClass="bus" id="bus" accel="2.6" decel="4.5" sigma="0.5" length="12.0" minGap="3" maxSpeed="30" speedDev="0.1" guiShape="bus">
+        <param key="has.rerouting.device" value="false" />
+    </vType>
+    <vehicle id="AVL---_20_16" type="bus" depart="905.00" departSpeed="0.00">
+        <route edges="-31230#4 -31230#5 30528#15 30528#14 30528#13 30528#12 30528#11 30528#10" />
+    </vehicle>
+    <vehicle id="AVL---_20_17" type="bus" depart="905.00" departSpeed="0.00">
+        <route edges="-32410#1 -32410#2 -32410#3" />
+    </vehicle>
+    <vehicle id="AVL---_8_16" type="bus" depart="923.00" departSpeed="0.00">
+        <route edges="30528#13 30528#12 30528#11 30528#10" />
+    </vehicle>
+    <vehicle id="AVL---_11_16" type="bus" depart="928.00" departSpeed="0.00">
+        <route edges="30528#13 30528#12 30528#11 30528#10" />
+    </vehicle>
+    <vehicle id="AVL---_13_17" type="bus" depart="928.00" departSpeed="0.00">
+        <route edges="30534#3 30534#2 -32964#8 -32964#9 -32964#10 -32964#11 31890 32410#0 30528#15 30528#14 30528#13 30528#12 30528#11 30528#10" />
+    </vehicle>
+    <vehicle id="AVL---_J2_16" type="bus" depart="929.00" departSpeed="0.00">
+        <route edges="30528#13 30528#12 30528#11 30528#10" />
+    </vehicle>
+    <vehicle id="RGM---_120_17" type="bus" depart="939.00" departSpeed="0.00">
+        <route edges="30528#13 30528#12 30528#11 30528#10" />
+    </vehicle>
+    <vehicle id="AVL---_10_16" type="bus" depart="948.00" departSpeed="0.00">
+        <route edges="30528#13 30528#12 30528#11 30528#10" />
+    </vehicle>
+    <vehicle id="AVL---_23_17" type="bus" depart="949.00" departSpeed="0.00">
+        <route edges="30528#13 30528#12 30528#11 30528#10" />
+    </vehicle>
+    <vehicle id="AVL---_9_17" type="bus" depart="956.00" departSpeed="0.00">
+        <route edges="30528#13 30528#12 30528#11 30528#10" />
+    </vehicle>
+    <vehicle id="AVL---_J1_17" type="bus" depart="957.26" departSpeed="0.00">
+        <route edges="30534#3 30534#2 -32964#8 32468#1 32178 -30608#9 -30608#10 -32410#3" />
+    </vehicle>
+    <vehicle id="AVL---_1_17" type="bus" depart="981.74" departSpeed="0.00">
+        <route edges="31272#3 31272#2 31272#1 31272#0 30528#20 30528#19 30528#18 30528#17 30528#16 30528#15 30528#14 30528#13 30528#12 30528#11 30528#10" />
+    </vehicle>
+    <vehicle id="AVL---_J1_16" type="bus" depart="998.36" departSpeed="0.00">
+        <route edges="-32432#14 -32964#2 -32964#3 -32964#4 -32964#5 -32964#6 -32964#7 -32964#8 -32964#9 -32964#10 -32964#11 31890 -32410#1 -32410#2 -30568 -31232 -31030" />
+    </vehicle>
+    <vehicle id="AVL---_14_17" type="bus" depart="1038.34" departSpeed="0.00">
+        <route edges="31272#3 31272#2 31272#1 31272#0 30528#20 30528#19 30528#18 30528#17 30528#16 30528#15 30528#14 30528#13 30528#12 30528#11 30528#10" />
+    </vehicle>
+    <vehicle id="AVL---_5_17" type="bus" depart="1043.14" departSpeed="0.00">
+        <route edges="-31818#20 -31818#21 -31818#22 31872#1 -30294#0" />
+    </vehicle>
+    <vehicle id="AVL---_6_17" type="bus" depart="1081.14" departSpeed="0.00">
+        <route edges="-31818#20 -31818#21 -31818#22 31872#1 -30294#0" />
+    </vehicle>
+    <vehicle id="AVL---_3_17" type="bus" depart="1093.69" departSpeed="0.00">
+        <route edges="-30528#10 -30528#11 -30528#12 -30528#13 -32850 -31890 32964#11 32964#10 32964#9 32964#8 32964#7 32964#6 32964#5 32964#4 32964#3 32964#2 -32432#15 -32382#2 -32382#0 31818#23 31818#22" />
+    </vehicle>
+    <vehicle id="AVL---_5_17_seg1" type="bus" depart="1096.37" departSpeed="0.00">
+        <route edges="30528#21 30528#20 30528#19 30528#18 30528#17 30528#16 30528#15 30528#14 30528#13 30528#12 30528#11 30528#10" />
+    </vehicle>
+    <vehicle id="AVL---_2_17" type="bus" depart="1102.44" departSpeed="0.00">
+        <route edges="-30528#10 -30528#11 -30528#12 -30528#13 -30528#14 -30528#15 -30528#16 -30528#17 -30528#18 -30528#19 -30528#20 -31272#0 30950" />
+    </vehicle>
+    <vehicle id="AVL---_4_17" type="bus" depart="1103.50" departSpeed="0.00">
+        <route edges="-30528#10 -30528#11 -30528#12 -30528#13 -30528#14 -30528#15 -30528#16 -30528#17 -30528#18 -30528#19 -30528#20 -31272#0 -31272#1 -31272#2 -31272#3" />
+    </vehicle>
+    <vehicle id="AVL---_23_16" type="bus" depart="1115.08" departSpeed="0.00">
+        <route edges="-30528#10 -30528#11 -30528#12 -30528#13" />
+    </vehicle>
+    <vehicle id="AVL---_20_17_seg1" type="bus" depart="1124.67" departSpeed="0.00">
+        <route edges="-30528#10 -30528#11 -30528#12 -30528#13 -30528#14 -30528#15 31230#5 31230#4" />
+    </vehicle>
+    <vehicle id="AVL---_4_16" type="bus" depart="1129.30" departSpeed="0.00">
+        <route edges="31272#3 31272#2 31272#1 31272#0 30528#20 30528#19 30528#18 30528#17 30528#16 30528#15 30528#14 30528#13 30528#12 30528#11 30528#10" />
+    </vehicle>
+    <vehicle id="AVL---_6_17_seg1" type="bus" depart="1134.37" departSpeed="0.00">
+        <route edges="30528#21 30528#20 30528#19 30528#18 30528#17 30528#16 30528#15 30528#14 30528#13 30528#12 30528#11 30528#10" />
+    </vehicle>
+    <vehicle id="AVL---_20_16_seg1" type="bus" depart="1144.57" departSpeed="0.00">
+        <route edges="32410#3 32410#2 32410#1" />
+    </vehicle>
+    <vehicle id="AVL---_J1_17_seg1" type="bus" depart="1150.44" departSpeed="0.00">
+        <route edges="-30528#10 -30882 31030 31232 30568 32410#2 32410#1 -31890 32964#11 32964#10 32964#9 32964#8 32964#7 32964#6 32964#5 32964#4 32964#3 32964#2 32432#14" />
+    </vehicle>
+    <vehicle id="AVL---_16_17" type="bus" depart="1153.00" departSpeed="0.00">
+        <route edges="30528#21 30528#20 30528#19 30528#18 30528#17 30528#16 30528#15 30528#14 30528#13 30528#12 30528#11 30528#10" />
+    </vehicle>
+    <vehicle id="AVL---_3_16" type="bus" depart="1159.87" departSpeed="0.00">
+        <route edges="-31818#22 -31818#23 -32382#1 32432#15 -32964#2 -32964#3 -32964#4 -32964#5 -32964#6 -32964#7 -32964#8 -32964#9 -32964#10 -32964#11 31890 32410#0 30528#15 30528#14 30528#13 30528#12 30528#11 30528#10" />
+    </vehicle>
+    <vehicle id="AVL---_15_16" type="bus" depart="1185.56" departSpeed="0.00">
+        <route edges="-32432#14 -32432#15 -32382#2 -32382#0 31818#23 31872#1 -30294#0" />
+    </vehicle>
+    <vehicle id="AVL---_J1_16_seg1" type="bus" depart="1209.36" departSpeed="0.00">
+        <route edges="32410#3 30608#10 30608#9 -32178 -32468#1 32964#8 -30534#2 -30534#3" />
+    </vehicle>
+    <vehicle id="AVL---_21_16" type="bus" depart="1209.79" departSpeed="0.00">
+        <route edges="31272#3 31272#2 31272#1 31272#0 30528#20 30528#19 30528#18 30528#17 30528#16 30528#15 30528#14 30528#13 30528#12 30528#11 30528#10" />
+    </vehicle>
+    <vehicle id="AVL---_2_16" type="bus" depart="1213.79" departSpeed="0.00">
+        <route edges="-30950 31272#0 30528#20 30528#19 30528#18 30528#17 30528#16 30528#15 30528#14 30528#13 30528#12 30528#11 30528#10" />
+    </vehicle>
+    <vehicle id="AVL---_18_16" type="bus" depart="1220.74" departSpeed="0.00">
+        <route edges="-30950 31272#0 30528#20 30528#19 30528#18 30528#17 30528#16 30528#15 30528#14 30528#13 30528#12 30528#11 30528#10" />
+    </vehicle>
+    <vehicle id="AVL---_5_16" type="bus" depart="1241.00" departSpeed="0.00">
+        <route edges="-30528#10 -30528#11 -30528#12 -30528#13 -30528#14 -30528#15 -30528#16 -30528#17 -30528#18 -30528#19 -30528#20 -30528#21" />
+    </vehicle>
+    <vehicle id="AVL---_15_16_seg1" type="bus" depart="1242.43" departSpeed="0.00">
+        <route edges="30528#21 30528#20 30528#19 30528#18 30528#17 30528#16 30528#15 30528#14 30528#13 30528#12 30528#11 30528#10" />
+    </vehicle>
+    <vehicle id="AVL---_J2_17" type="bus" depart="1257.30" departSpeed="0.00">
+        <route edges="-30528#10 -30528#11 -30528#12 -30528#13" />
+    </vehicle>
+    <vehicle id="AVL---_11_17" type="bus" depart="1262.11" departSpeed="0.00">
+        <route edges="-30528#10 -30528#11 -30528#12 -30528#13" />
+    </vehicle>
+    <vehicle id="AVL---_15_17" type="bus" depart="1269.39" departSpeed="0.00">
+        <route edges="-30528#10 -30528#11 -30528#12 -30528#13 -30528#14 -30528#15 -30528#16 -30528#17 -30528#18 -30528#19 -30528#20 -30528#21" />
+    </vehicle>
+    <vehicle id="AVL---_16_16" type="bus" depart="1276.42" departSpeed="0.00">
+        <route edges="-30528#10 -30528#11 -30528#12 -30528#13 -30528#14 -30528#15 -30528#16 -30528#17 -30528#18 -30528#19 -30528#20 -30528#21" />
+    </vehicle>
+    <vehicle id="AVL---_10_17" type="bus" depart="1282.11" departSpeed="0.00">
+        <route edges="-30528#10 -30528#11 -30528#12 -30528#13" />
+    </vehicle>
+    <vehicle id="RGM---_120_16" type="bus" depart="1294.42" departSpeed="0.00">
+        <route edges="-30528#10 -30528#11 -30528#12 -30528#13" />
+    </vehicle>
+    <vehicle id="AVL---_1_16" type="bus" depart="1319.05" departSpeed="0.00">
+        <route edges="-30528#10 -30528#11 -30528#12 -30528#13 -30528#14 -30528#15 -30528#16 -30528#17 -30528#18 -30528#19 -30528#20 -31272#0 -31272#1 -31272#2 -31272#3" />
+    </vehicle>
+    <vehicle id="AVL---_21_17" type="bus" depart="1331.83" departSpeed="0.00">
+        <route edges="-30528#10 -30528#11 -30528#12 -30528#13 -30528#14 -30528#15 -30528#16 -30528#17 -30528#18 -30528#19 -30528#20 -31272#0 -31272#1 -31272#2 -31272#3" />
+    </vehicle>
+    <vehicle id="AVL---_5_16_seg1" type="bus" depart="1358.45" departSpeed="0.00">
+        <route edges="30294#0 -31872#1 31818#22 31818#21 31818#20" />
+    </vehicle>
+    <vehicle id="AVL---_15_17_seg1" type="bus" depart="1391.01" departSpeed="0.00">
+        <route edges="31818#21 -32964#0 -32964#1 32432#14" />
+    </vehicle>
+    <vehicle id="AVL---_13_16" type="bus" depart="1392.74" departSpeed="0.00">
+        <route edges="-30528#10 -30528#11 -30528#12 -30528#13 -32850 -31890 32964#11 32964#10 32964#9 32964#8 -30534#2 -30534#3" />
+    </vehicle>
+    <vehicle id="AVL---_18_17" type="bus" depart="1407.38" departSpeed="0.00">
+        <route edges="-30528#10 -30528#11 -30528#12 -30528#13 -30528#14 -30528#15 -30528#16 -30528#17 -30528#18 -30528#19 -30528#20 -31272#0 30950" />
+    </vehicle>
+    <vehicle id="AVL---_6_16" type="bus" depart="1438.08" departSpeed="0.00">
+        <route edges="-30528#10 -30528#11 -30528#12 -30528#13 -30528#14 -30528#15 -30528#16 -30528#17 -30528#18 -30528#19 -30528#20 -30528#21" />
+    </vehicle>
+    <vehicle id="AVL---_9_16" type="bus" depart="1449.31" departSpeed="0.00">
+        <route edges="-30528#10 -30528#11 -30528#12 -30528#13" />
+    </vehicle>
+    <vehicle id="AVL---_14_16" type="bus" depart="1451.05" departSpeed="0.00">
+        <route edges="-30528#10 -30528#11 -30528#12 -30528#13 -30528#14 -30528#15 -30528#16 -30528#17 -30528#18 -30528#19 -30528#20 -31272#0 -31272#1 -31272#2 -31272#3" />
+    </vehicle>
+    <vehicle id="AVL---_6_16_seg1" type="bus" depart="1555.53" departSpeed="0.00">
+        <route edges="30294#0 -31872#1 31818#22 31818#21 31818#20" />
+    </vehicle>
+    <vehicle id="AVL---_8_17" type="bus" depart="1702.72" departSpeed="0.00">
+        <route edges="-30528#10 -30528#11 -30528#12 -30528#13" />
+    </vehicle>
+</routes>

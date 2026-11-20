@@ -1,0 +1,75 @@
+{
+  "name": "luxembourg_hesperange_small",
+  "description": "LuST crop of Hesperange (small), 7800-8850 x 1800-2700 m, 7:45-8:30: residential pockets on one spine road, one-street bottleneck, nearly a tree, all two-way",
+  "source": "LuST Scenario (Luxembourg SUMO Traffic)",
+  "generation": {
+    "tool": "build_lux_crop.py",
+    "entry_estimator": "vehroute",
+    "outside_insertion": "base_desired_best",
+    "tls_mode": "static",
+    "sim_preset": "lust_ref"
+  },
+  "bounding_box": {
+    "x_min": 7800.0,
+    "x_max": 8850.0,
+    "y_min": 1800.0,
+    "y_max": 2700.0,
+    "width_m": 1050.0,
+    "height_m": 900.0
+  },
+  "time_window": {
+    "start_hour": 7.75,
+    "end_hour": 8.5,
+    "duration_minutes": 45,
+    "preload_hours": 1.0
+  },
+  "network_stats": {
+    "num_edges": 174,
+    "num_tls": 2,
+    "num_origins": 93,
+    "num_destinations": 82,
+    "num_edge_types": 2
+  },
+  "demand_stats": {
+    "num_agents": 1718,
+    "num_background_humans": 0,
+    "num_split_vehicles": 26,
+    "num_from_outside": 1531,
+    "num_bus_segments": 2,
+    "filter_mode": "all"
+  },
+  "od_filter": {
+    "od_pairs_total": 276,
+    "od_pairs_kept": 276,
+    "od_pairs_background": 0,
+    "od_pairs_unreachable": 0,
+    "agents_before": 1718,
+    "agents_after": 1718,
+    "agents_background": 0,
+    "agents_unreachable": 0,
+    "min_paths": 1,
+    "path_count_distribution": {
+      "1": 2,
+      "10": 1,
+      "12": 273
+    }
+  },
+  "sumo_validation": {
+    "teleports": 0,
+    "jam": 0,
+    "yield": 0,
+    "wrongLane": 0,
+    "inserted": 1720,
+    "duration": 159.52,
+    "speed": 9.95,
+    "routeLength": 1502.46,
+    "warnings": 0
+  },
+  "janux_od_filter": {
+    "tool": "check_janux_od.py --num-paths 4 --num-samples 10 --timeout 5; apply_bad_od_filter.py --dropped-action discard",
+    "od_pairs_bad": 15,
+    "od_pairs_nopath": 0,
+    "agents_before": 1718,
+    "agents_after": 1693
+  }
+}
