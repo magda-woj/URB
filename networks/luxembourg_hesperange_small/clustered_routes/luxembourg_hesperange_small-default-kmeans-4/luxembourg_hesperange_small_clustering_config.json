@@ -1,0 +1,60 @@
+{
+  "run_name": "luxembourg_hesperange_small-default-kmeans-4",
+  "city_name": "luxembourg_hesperange_small",
+  "algorithm": "kmeans",
+  "n_clusters": 4,
+  "features_used": [
+    "mean_speed",
+    "speed_std",
+    "pct_local",
+    "road_type_entropy",
+    "traffic_lights_per_km",
+    "turns_per_km",
+    "yield_priority_changes_per_km",
+    "left_yield_turns_per_km",
+    "mean_circuity",
+    "edges_per_km",
+    "edge_dist_from_shortest",
+    "mean_edge_dist_to_other_routes",
+    "max_edge_dist_to_other_routes"
+  ],
+  "feature_pruning": [
+    {
+      "feature": "pct_high_capacity",
+      "reason": "zero_variance"
+    },
+    {
+      "feature": "free_flow_time",
+      "reason": "correlation",
+      "kept": "total_length",
+      "correlation": 0.9618409358935989
+    },
+    {
+      "feature": "free_flow_time",
+      "reason": "correlation",
+      "kept": "mean_circuity",
+      "correlation": 0.9353679143990095
+    },
+    {
+      "feature": "total_length",
+      "reason": "correlation",
+      "kept": "mean_circuity",
+      "correlation": 0.9672691209326902
+    },
+    {
+      "feature": "pct_mid_capacity",
+      "reason": "correlation",
+      "kept": "pct_local",
+      "correlation": 1.0
+    }
+  ],
+  "silhouette": 0.11505574567540833,
+  "average_actions_per_od": 3.628352490421456,
+  "cluster_sizes": {
+    "0": 686,
+    "1": 571,
+    "2": 695,
+    "3": 597
+  },
+  "inertia": 2242.589291686266
+}
